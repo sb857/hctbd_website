@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Stanza Health · The intelligence layer for Indian healthcare</title>
+<meta name="description" content="Stanza turns handwritten notes, scans and legacy EMR records into standardized, interoperable patient histories, and files insurance claims for you, automatically." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-home" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit;">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="stanzaLogoGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#22D3EE"/>
+            <stop offset="1" stop-color="#8B5CF6"/>
+          </linearGradient>
+        </defs>
+        <rect x="0.5" y="0.5" width="27" height="27" rx="7" fill="url(#stanzaLogoGrad)"/>
+        <path d="M9 7v5a4 4 0 0 0 8 0V7" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        <path d="M13 16v2.2a3.2 3.2 0 0 0 3.2 3.2h.6a3 3 0 0 0 3-3" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="20" cy="14.6" r="1.7" stroke="#FFFFFF" stroke-width="1.6" fill="none"/>
+      </svg>
+      <span style="font-size:18px;font-weight:500;letter-spacing:-0.02em;">Stanza Health</span>
+    </a>
+    <div class="nav-links">
+      <a href="#platform">Platform</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#why-now">Why Now</a>
+      <a href="#company">Company</a>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a class="btn btn-primary" href="#cta">
+        Contact us
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section style="padding:80px 0 60px;">
+  <div class="container">
+    <div class="hero-grid" style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:80px;align-items:end;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;">
+          <span style="display:inline-flex;align-items:center;gap:10px;padding:5px 12px;border:1px solid var(--line-2);border-radius:999px;background:var(--bg-2);">
+            <span style="display:inline-flex;align-items:center;gap:6px;">
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);font-weight:600;">MVP</span>
+              <span style="width:14px;height:1px;background:var(--ink-3);display:inline-block;"></span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-4);font-weight:500;">Pilot</span>
+              <span style="width:14px;height:1px;background:var(--line-2);display:inline-block;"></span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-4);font-weight:500;">Scale</span>
+            </span>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:8px;">
+            <span class="dot"></span>
+            <span>FHIR · ABDM · NHCX · DPDP-ready</span>
+          </span>
+        </div>
+        <h1 style="text-wrap:balance;">
+          The intelligence layer for <span class="serif">Indian healthcare</span> data.
+        </h1>
+        <p style="max-width:540px;font-size:19px;line-height:1.45;color:var(--ink-2);margin-top:28px;">Stanza turns handwritten notes, scans and legacy EMR records into standardized, interoperable patient histories, and files insurance claims for you, automatically.</p>
+        <div style="display:flex;gap:12px;margin-top:36px;">
+          <a class="btn btn-primary" href="#cta">
+            Get in touch
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="stats-row" style="display:flex;gap:48px;margin-top:64px;padding-top:32px;border-top:1px solid var(--line);">
+          <div>
+            <div style="font-size:32px;font-weight:400;letter-spacing:-0.03em;line-height:1;">34%</div>
+            <div style="font-size:13px;color:var(--ink-3);margin-top:8px;line-height:1.4;">Of insurance claims disallowed<br/>due to documentation errors</div>
+          </div>
+          <div>
+            <div style="font-size:32px;font-weight:400;letter-spacing:-0.03em;line-height:1;">80%</div>
+            <div style="font-size:13px;color:var(--ink-3);margin-top:8px;line-height:1.4;">Of medical notes in India<br/>are still handwritten</div>
+          </div>
+          <div>
+            <div style="font-size:32px;font-weight:400;letter-spacing:-0.03em;line-height:1;">$541M</div>
+            <div style="font-size:13px;color:var(--ink-3);margin-top:8px;line-height:1.4;">FY24 disallowed payouts,<br/>+19% YoY</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Mock -->
+      <div class="mock" style="position:relative;">
+        <div class="mock-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">stanza.health/patient/PT-94120</span>
+        </div>
+        <div style="padding:20px 22px 22px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;">
+            <div>
+              <div style="font-size:11px;color:var(--ink-3);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;">ABHA · 14-2891-7720-3344</div>
+              <div style="font-size:20px;font-weight:500;margin-top:4px;">Anika Reddy, 47F</div>
+              <div style="font-size:13px;color:var(--ink-3);">Type 2 Diabetes · CKD Stage 2 · 14-yr history</div>
+            </div>
+            <span class="tag tag-info">FHIR R4</span>
+          </div>
+
+          <div style="border-top:1px solid var(--line);padding-top:14px;margin-bottom:14px;">
+            <div style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;">Unified Timeline</div>
+
+            <div style="display:grid;grid-template-columns:90px 1fr auto;gap:12px;padding:8px 0;align-items:center;font-size:13.5px;">
+              <span class="mono" style="color:var(--ink-3);font-size:11px;">14 Apr 26</span>
+              <div>
+                <div style="font-weight:500;">HbA1c 7.2 → 6.8</div>
+                <div style="color:var(--ink-3);font-size:12px;">Apollo · Bengaluru</div>
+              </div>
+              <span class="tag tag-neutral">structured</span>
+            </div>
+            <div style="display:grid;grid-template-columns:90px 1fr auto;gap:12px;padding:8px 0;align-items:center;font-size:13.5px;">
+              <span class="mono" style="color:var(--ink-3);font-size:11px;">02 Mar 26</span>
+              <div>
+                <div style="font-weight:500;">Eye exam, mild NPDR</div>
+                <div style="color:var(--ink-3);font-size:12px;">Manipal · Mumbai</div>
+              </div>
+              <span class="tag tag-neutral">structured</span>
+            </div>
+            <div style="display:grid;grid-template-columns:90px 1fr auto;gap:12px;padding:8px 0;align-items:center;font-size:13.5px;">
+              <span class="mono" style="color:var(--ink-3);font-size:11px;">18 Jan 26</span>
+              <div>
+                <div style="font-weight:500;">Rx Metformin 1000mg ↑</div>
+                <div style="color:var(--ink-3);font-size:12px;">Local clinic · scanned</div>
+              </div>
+              <span class="tag tag-warn">extracted</span>
+            </div>
+            <div style="display:grid;grid-template-columns:90px 1fr auto;gap:12px;padding:8px 0;align-items:center;font-size:13.5px;">
+              <span class="mono" style="color:var(--ink-3);font-size:11px;">07 Nov 25</span>
+              <div>
+                <div style="font-weight:500;">eGFR 71 mL/min</div>
+                <div style="color:var(--ink-3);font-size:12px;">Fortis · Delhi</div>
+              </div>
+              <span class="tag tag-neutral">structured</span>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid var(--line);padding-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div style="background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;">
+              <div style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Claim · NHCX</div>
+              <div style="font-size:18px;font-weight:500;margin-top:4px;">₹ 1,42,800</div>
+              <div style="display:flex;gap:6px;margin-top:8px;align-items:center;">
+                <span class="tag tag-good">
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Auto-prepared
+                </span>
+                <span style="font-size:11px;color:var(--ink-3);">2.1s</span>
+              </div>
+            </div>
+            <div style="background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;">
+              <div style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Consent · DPDP</div>
+              <div style="font-size:18px;font-weight:500;margin-top:4px;">Granted</div>
+              <div style="display:flex;gap:6px;margin-top:8px;align-items:center;">
+                <span class="tag tag-info">
+                  <svg width="10" height="10" viewBox="0 0 18 18" fill="none"><rect x="4" y="8" width="10" height="7" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M6 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.2"/></svg>
+                  Patient-signed
+                </span>
+                <span style="font-size:11px;color:var(--ink-3);">30d</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGOS / NATIONAL RAILS ===== -->
+<section style="padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);">
+  <div class="container" style="display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;">
+    <div class="eyebrow" style="white-space:nowrap;">
+      <span class="dot"></span> Built on India's national health rails
+    </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <div style="font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink-2);white-space:nowrap;letter-spacing:-0.01em;">ABDM</div>
+        <div style="font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink-2);white-space:nowrap;letter-spacing:-0.01em;">NHCX</div>
+        <div style="font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink-2);white-space:nowrap;letter-spacing:-0.01em;">DPDP 2023</div>
+        <div style="font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink-2);white-space:nowrap;letter-spacing:-0.01em;">ABDM</div>
+        <div style="font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink-2);white-space:nowrap;letter-spacing:-0.01em;">NHCX</div>
+        <div style="font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink-2);white-space:nowrap;letter-spacing:-0.01em;">DPDP 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCT / PLATFORM ===== -->
+<section class="section" id="platform" style="background:var(--bg-2);">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> The platform</div>
+        <h2 style="margin-top:18px;text-wrap:balance;">
+          An AI layer that sits <span class="serif">on top</span> of your EMR, not in place of it.
+        </h2>
+      </div>
+      <p class="muted" style="max-width:440px;font-size:16px;padding-bottom:8px;">
+        Stanza ingests the messy reality of Indian healthcare: handwritten OPD slips, scanned lab
+        reports, fragmented EMR exports, and emits clean, FHIR-compliant records every downstream
+        system can use.
+      </p>
+    </div>
+
+    <div class="product-tabs" style="display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+      <button class="product-tab-btn active" data-tab="0" style="border-right:1px solid var(--line);">
+        <div class="num">01</div>
+        <div class="label">Document Intelligence</div>
+        <div class="sub">Paper → FHIR</div>
+      </button>
+      <button class="product-tab-btn" data-tab="1" style="border-right:1px solid var(--line);">
+        <div class="num">02</div>
+        <div class="label">Unified Patient Story</div>
+        <div class="sub">Cross-institution histories</div>
+      </button>
+      <button class="product-tab-btn" data-tab="2" style="border-right:1px solid var(--line);">
+        <div class="num">03</div>
+        <div class="label">Claims Automation</div>
+        <div class="sub">NHCX one-click filing</div>
+      </button>
+      <button class="product-tab-btn" data-tab="3">
+        <div class="num">04</div>
+        <div class="label">Compliance-as-a-Service</div>
+        <div class="sub">ABDM · DPDP ready</div>
+      </button>
+    </div>
+
+    <!-- Pane 0: Document Intelligence -->
+    <div class="product-pane" data-pane="0" style="padding:56px 0 0;display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start;">
+      <div>
+        <h3 style="font-size:34px;font-weight:400;letter-spacing:-0.025em;line-height:1.05;margin-bottom:28px;">
+          Handwritten <span class="serif">scribbles</span> become structured records.
+        </h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">OCR + medical NER tuned on Indian handwriting and 14 regional scripts</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Confidence-scored extractions with one-click clinician review</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">OCR + medical NER tuned on Indian handwriting and 14 regional scripts</span></li>
+        </ul>
+      </div>
+      <div class="mock">
+        <div class="mock-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">extract / OPD-slip-2891.jpg</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);">
+          <div style="padding:18px;border-right:1px solid var(--line);background:var(--bg);">
+            <div class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;">Source · scanned</div>
+            <div style="background:#fffaf0;border:1px solid var(--line);padding:18px 16px;font-family:cursive;font-style:italic;font-size:15px;line-height:1.7;color:#3a2a1a;transform:rotate(-0.4deg);box-shadow:0 1px 0 rgba(0,0,0,0.04);">
+              Pt. A. Reddy, F/47<br/>
+              c/o ↑ thirst, fatigue 3 wks<br/>
+              HbA1c 7.2 (Jan), eGFR 71<br/>
+              Rx: <u>Metformin 1000mg BD</u><br/>
+              <span style="text-decoration:line-through;">Glimepride 2mg</span> → stop<br/>
+              F/u 4 wks · LFT, fasting
+            </div>
+          </div>
+          <div style="padding:18px;">
+            <div class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;">Output · FHIR R4</div>
+<pre style="margin:0;font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:1.55;color:var(--ink-2);white-space:pre-wrap;">{
+  "resourceType": "MedicationRequest",
+  "status": "active",
+  "intent": "order",
+  "medication": {
+    "coding": "RxNorm/6809",
+    "display": "Metformin 1000mg"
+  },
+  "dosage": "1-0-1",
+  "subject": "Patient/PT-94120"<span style="background:oklch(96% 0.04 155);color:oklch(38% 0.13 155);">,
+  "_confidence": 0.97</span>
+}</pre>
+            <div style="display:flex;gap:6px;margin-top:14px;flex-wrap:wrap;">
+              <span class="tag tag-good">5 entities</span>
+              <span class="tag tag-info">2 dedup'd</span>
+              <span class="tag tag-warn">1 review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pane 1: Unified Patient Story -->
+    <div class="product-pane" data-pane="1" style="display:none;padding:56px 0 0;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start;">
+      <div>
+        <h3 style="font-size:34px;font-weight:400;letter-spacing:-0.025em;line-height:1.05;margin-bottom:28px;">
+          One <span class="serif">patient</span>. Every encounter. One timeline.
+        </h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">ABHA-linked patient resolution across institutions</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Conflict resolution between contradicting records (e.g. dosage changes)</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Population analytics layered on top of unified cohorts</span></li>
+        </ul>
+      </div>
+      <div class="mock">
+        <div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">timeline / PT-94120</span></div>
+        <div style="padding:24px 22px;">
+          <div style="position:relative;padding-left:24px;">
+            <div style="position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line);"></div>
+            <div style="position:relative;display:grid;grid-template-columns:80px 1fr auto;gap:14px;padding:10px 0;align-items:center;">
+              <span style="position:absolute;left:-22px;top:50%;width:9px;height:9px;border-radius:50%;background:var(--bg-2);border:2px solid var(--accent);transform:translateY(-50%);"></span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">Nov 2025</span>
+              <div><div style="font-weight:500;font-size:14px;">eGFR 71 mL/min</div><div style="font-size:12px;color:var(--ink-3);">Fortis · Delhi</div></div>
+              <span class="tag tag-info">Lab</span>
+            </div>
+            <div style="position:relative;display:grid;grid-template-columns:80px 1fr auto;gap:14px;padding:10px 0;align-items:center;">
+              <span style="position:absolute;left:-22px;top:50%;width:9px;height:9px;border-radius:50%;background:var(--bg-2);border:2px solid var(--accent);transform:translateY(-50%);"></span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">Aug 2025</span>
+              <div><div style="font-weight:500;font-size:14px;">HbA1c 8.1</div><div style="font-size:12px;color:var(--ink-3);">Apollo · Bengaluru</div></div>
+              <span class="tag tag-info">Lab</span>
+            </div>
+            <div style="position:relative;display:grid;grid-template-columns:80px 1fr auto;gap:14px;padding:10px 0;align-items:center;">
+              <span style="position:absolute;left:-22px;top:50%;width:9px;height:9px;border-radius:50%;background:var(--bg-2);border:2px solid var(--accent);transform:translateY(-50%);"></span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">Jan 2026</span>
+              <div><div style="font-weight:500;font-size:14px;">Rx Metformin ↑ 1000mg</div><div style="font-size:12px;color:var(--ink-3);">Local clinic</div></div>
+              <span class="tag tag-warn">Rx</span>
+            </div>
+            <div style="position:relative;display:grid;grid-template-columns:80px 1fr auto;gap:14px;padding:10px 0;align-items:center;">
+              <span style="position:absolute;left:-22px;top:50%;width:9px;height:9px;border-radius:50%;background:var(--bg-2);border:2px solid var(--accent);transform:translateY(-50%);"></span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">Mar 2026</span>
+              <div><div style="font-weight:500;font-size:14px;">NPDR, mild</div><div style="font-size:12px;color:var(--ink-3);">Manipal · Mumbai</div></div>
+              <span class="tag tag-good">Dx</span>
+            </div>
+            <div style="position:relative;display:grid;grid-template-columns:80px 1fr auto;gap:14px;padding:10px 0;align-items:center;">
+              <span style="position:absolute;left:-22px;top:50%;width:9px;height:9px;border-radius:50%;background:var(--bg-2);border:2px solid var(--accent);transform:translateY(-50%);"></span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">Apr 2026</span>
+              <div><div style="font-weight:500;font-size:14px;">HbA1c 6.8</div><div style="font-size:12px;color:var(--ink-3);">Apollo · Bengaluru</div></div>
+              <span class="tag tag-info">Lab</span>
+            </div>
+          </div>
+          <div style="border-top:1px solid var(--line);margin-top:14px;padding-top:14px;display:flex;justify-content:space-between;align-items:center;font-size:13px;">
+            <span class="muted">5 institutions reconciled</span>
+            <span class="tag tag-good">
+              <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              No conflicts
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pane 2: Claims Automation -->
+    <div class="product-pane" data-pane="2" style="display:none;padding:56px 0 0;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start;">
+      <div>
+        <h3 style="font-size:34px;font-weight:400;letter-spacing:-0.025em;line-height:1.05;margin-bottom:28px;">
+          Claims filed in <span class="serif">seconds</span>, not weeks.
+        </h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">One-click claim preparation against the unified record</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Pre-flight validation against insurer rule books</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Automatic disclosure flagging. The #1 cause of denials</span></li>
+        </ul>
+      </div>
+      <div class="mock">
+        <div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">claim / CL-44219 · NHCX</span></div>
+        <div style="padding:18px 22px 22px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;">
+            <div>
+              <div class="mono" style="font-size:11px;color:var(--ink-3);letter-spacing:0.08em;">HDFC ERGO · Cashless</div>
+              <div style="font-size:28px;font-weight:500;letter-spacing:-0.02em;margin-top:4px;">₹ 1,42,800</div>
+              <div style="font-size:12px;color:var(--ink-3);">3-day inpatient · ICD-11 5A11.4</div>
+            </div>
+            <span class="tag tag-good">
+              <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Ready to submit
+            </span>
+          </div>
+
+          <div style="border-top:1px solid var(--line);padding-top:14px;">
+            <div style="display:grid;grid-template-columns:24px 1fr auto;gap:10px;padding:7px 0;align-items:center;font-size:13.5px;">
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(96% 0.04 155);color:oklch(38% 0.13 155);display:inline-flex;align-items:center;justify-content:center;">
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>Pre-auth response matched</span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">0.4s</span>
+            </div>
+            <div style="display:grid;grid-template-columns:24px 1fr auto;gap:10px;padding:7px 0;align-items:center;font-size:13.5px;">
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(96% 0.04 155);color:oklch(38% 0.13 155);display:inline-flex;align-items:center;justify-content:center;">
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>Diagnosis &amp; procedure codes resolved</span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">0.6s</span>
+            </div>
+            <div style="display:grid;grid-template-columns:24px 1fr auto;gap:10px;padding:7px 0;align-items:center;font-size:13.5px;">
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(96% 0.04 155);color:oklch(38% 0.13 155);display:inline-flex;align-items:center;justify-content:center;">
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>Discharge summary auto-generated</span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">0.8s</span>
+            </div>
+            <div style="display:grid;grid-template-columns:24px 1fr auto;gap:10px;padding:7px 0;align-items:center;font-size:13.5px;">
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(96% 0.04 155);color:oklch(38% 0.13 155);display:inline-flex;align-items:center;justify-content:center;">
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>Disclosure cross-check (3 prior claims)</span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">0.3s</span>
+            </div>
+            <div style="display:grid;grid-template-columns:24px 1fr auto;gap:10px;padding:7px 0;align-items:center;font-size:13.5px;">
+              <span style="width:18px;height:18px;border-radius:50%;background:oklch(96% 0.04 60);color:oklch(40% 0.13 60);display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:12px;">!</span>
+              <span>Investigation report, pending upload</span>
+              <span class="mono" style="font-size:11px;color:var(--ink-3);">·</span>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:18px;">
+            <div style="padding:12px 14px;background:var(--bg);border:1px solid var(--line);border-radius:6px;">
+              <div style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Denial risk</div>
+              <div style="font-size:18px;font-weight:500;margin-top:4px;"><span class="tag tag-good">Low</span></div>
+            </div>
+            <div style="padding:12px 14px;background:var(--bg);border:1px solid var(--line);border-radius:6px;">
+              <div style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Time saved</div>
+              <div style="font-size:18px;font-weight:500;margin-top:4px;">6h 12m</div>
+            </div>
+            <div style="padding:12px 14px;background:var(--bg);border:1px solid var(--line);border-radius:6px;">
+              <div style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Confidence</div>
+              <div style="font-size:18px;font-weight:500;margin-top:4px;">0.94</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pane 3: Compliance -->
+    <div class="product-pane" data-pane="3" style="display:none;padding:56px 0 0;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start;">
+      <div>
+        <h3 style="font-size:34px;font-weight:400;letter-spacing:-0.025em;line-height:1.05;margin-bottom:18px;">
+          DPDP and ABDM compliance, <span class="serif">out of the box</span>.
+        </h3>
+        <p style="color:var(--ink-2);font-size:17px;line-height:1.5;margin-bottom:24px;">Every record carries a consent artifact. Every export carries an audit trail. Stanza handles the regulatory plumbing so your hospital is May-2027-ready on day one.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Consent capture flows aligned with DPDP 2023</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Full ABHA linkage and ABDM sandbox certification (M1–M3)</span></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:15px;"><span style="margin-top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;"></span><span style="color:var(--ink-2);">Tamper-evident audit logs, end-to-end encryption, India data residency</span></li>
+        </ul>
+      </div>
+      <div class="mock">
+        <div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">compliance / hospital-anchor-04</span></div>
+        <div style="padding:8px 0;">
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;align-items:center;">
+            <div style="font-size:14px;">ABDM Sandbox M1</div><span class="tag tag-good">Passed</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">ABDM Sandbox M2</div><span class="tag tag-warn">In review</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">ABDM Sandbox M3</div><span class="tag tag-warn">In review</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">NHA Accreditation</div><span class="tag tag-info">Q3 2026</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">DPDP readiness</div><span class="tag tag-good">Compliant</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">Data residency</div><span class="tag tag-info">IN-South-1</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">Encryption at rest</div><span class="tag tag-info">AES-256</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr auto;padding:14px 22px;border-top:1px solid var(--line);align-items:center;">
+            <div style="font-size:14px;">Audit log retention</div><span class="tag tag-neutral">7 years</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROBLEM ===== -->
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> The problem</div>
+        <h2 style="margin-top:18px;text-wrap:balance;">
+          Healthcare data is <span class="serif">trapped</span> in paper, silos and legacy EMRs.
+        </h2>
+      </div>
+      <div style="padding-bottom:8px;">
+        <p class="muted" style="max-width:440px;font-size:16px;">
+          The result is a system with no searchable records, no analytics, no
+          interoperability and no transparency, for patients, providers or payers.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="idx-row">
+        <div class="num">01</div>
+        <div style="display:grid;grid-template-columns:280px 1fr;gap:32px;">
+          <h3 style="font-weight:500;font-size:24px;letter-spacing:-0.02em;">Paper bottleneck</h3>
+          <p style="color:var(--ink-2);font-size:17px;line-height:1.45;max-width:640px;">80% of medical notes in India are still handwritten. Illegible, unsearchable, lost.</p>
+        </div>
+      </div>
+      <div class="idx-row">
+        <div class="num">02</div>
+        <div style="display:grid;grid-template-columns:280px 1fr;gap:32px;">
+          <h3 style="font-weight:500;font-size:24px;letter-spacing:-0.02em;">Documentation tax</h3>
+          <p style="color:var(--ink-2);font-size:17px;line-height:1.45;max-width:640px;">30% of clinician time goes to documentation. Burnout up, throughput down.</p>
+        </div>
+      </div>
+      <div class="idx-row">
+        <div class="num">03</div>
+        <div style="display:grid;grid-template-columns:280px 1fr;gap:32px;">
+          <h3 style="font-weight:500;font-size:24px;letter-spacing:-0.02em;">Claim leakage</h3>
+          <p style="color:var(--ink-2);font-size:17px;line-height:1.45;max-width:640px;">34% of insurance claims are disallowed in FY24 for documentation or disclosure errors.</p>
+        </div>
+      </div>
+      <div class="idx-row">
+        <div class="num">04</div>
+        <div style="display:grid;grid-template-columns:280px 1fr;gap:32px;">
+          <h3 style="font-weight:500;font-size:24px;letter-spacing:-0.02em;">Compliance debt</h3>
+          <p style="color:var(--ink-2);font-size:17px;line-height:1.45;max-width:640px;">DPDP mandates explicit patient consent by May 2027. Most legacy EMRs aren't ready.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PILLARS / SOLUTIONS ===== -->
+<section class="section section-ink" id="solutions">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> What you get</div>
+        <h2 style="margin-top:18px;color:var(--bg);text-wrap:balance;">
+          Six things <span class="serif">every hospital</span> needs. One platform.
+        </h2>
+      </div>
+      <p style="color:rgba(246,244,238,0.6);max-width:440px;font-size:16px;padding-bottom:8px;">
+        Stanza is engineered for the realities of Indian healthcare: paper-first workflows,
+        mixed-language documentation, fragmented payer rules and a regulator that's actively raising the bar.
+      </p>
+    </div>
+
+    <div class="pillars-grid" style="display:grid;grid-template-columns:repeat(3, 1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);">
+
+      <div style="padding:36px 32px;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;height:80px;">
+          <span style="color:var(--clay);"><svg width="22" height="22" viewBox="0 0 18 18" fill="none"><path d="M7 2v3M11 2v3M5 5h8v3a4 4 0 0 1-4 4 4 4 0 0 1-4-4V5zM9 12v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.4);letter-spacing:0.08em;">01</span>
+          </div>
+        </div>
+        <h3 style="color:var(--bg);font-size:22px;margin-bottom:12px;align-self:start;min-height:56px;line-height:1.2;">Zero-friction integration</h3>
+        <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;">Drop in on top of legacy EMRs. No rip-and-replace, no migration project. Your existing HIS keeps running, Stanza runs in parallel.</p>
+      </div>
+
+      <div style="padding:36px 32px;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;height:80px;">
+          <span style="color:var(--clay);"><svg width="22" height="22" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M5 5a2 2 0 0 0 0 4 2 2 0 0 0-1 3.5A2 2 0 0 0 7 14M13 5a2 2 0 0 1 0 4 2 2 0 0 1 1 3.5A2 2 0 0 1 11 14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:3px 7px;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);color:var(--clay);">More languages coming soon</span>
+            <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.4);letter-spacing:0.08em;">02</span>
+          </div>
+        </div>
+        <h3 style="color:var(--bg);font-size:22px;margin-bottom:12px;align-self:start;min-height:56px;line-height:1.2;">Document AI built for India</h3>
+        <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;">Tuned for Hindi, Tamil, Telugu, Bengali and 11 more scripts, plus the cursive shorthand of working clinicians.</p>
+      </div>
+
+      <div style="padding:36px 32px;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;height:80px;">
+          <span style="color:var(--clay);"><svg width="22" height="22" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="3" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="3.5" cy="14" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="14.5" cy="14" r="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M9 4.5L4 12.5M9 4.5L14 12.5M5 14h8" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.4);letter-spacing:0.08em;">03</span>
+          </div>
+        </div>
+        <h3 style="color:var(--bg);font-size:22px;margin-bottom:12px;align-self:start;min-height:56px;line-height:1.2;">FHIR-native and ABDM-linked</h3>
+        <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;">Every record emits as FHIR R4 with full ABHA linkage. Other systems can finally read what your hospital writes.</p>
+      </div>
+
+      <div style="padding:36px 32px;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;height:80px;">
+          <span style="color:var(--clay);"><svg width="22" height="22" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M9 5.5v7M11 7c-.5-1-3-1.3-3 .3 0 1.6 3 1.2 3 2.7 0 1.5-2.5 1.3-3 .3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.4);letter-spacing:0.08em;">04</span>
+          </div>
+        </div>
+        <h3 style="color:var(--bg);font-size:22px;margin-bottom:12px;align-self:start;min-height:56px;line-height:1.2;">Government-funded onboarding</h3>
+        <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;">India's Digital Health Incentive Scheme pays hospitals per ABHA-linked transaction, subsidizing the cost of working with us.</p>
+      </div>
+
+      <div style="padding:36px 32px;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;height:80px;">
+          <span style="color:var(--clay);"><svg width="22" height="22" viewBox="0 0 18 18" fill="none"><path d="M9 2L3 4.5v4c0 4 2.5 6.5 6 7.5 3.5-1 6-3.5 6-7.5v-4L9 2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M6.5 9L8.5 11L12 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.4);letter-spacing:0.08em;">05</span>
+          </div>
+        </div>
+        <h3 style="color:var(--bg);font-size:22px;margin-bottom:12px;align-self:start;min-height:56px;line-height:1.2;">Compliance-as-a-service</h3>
+        <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;">Patient consent, audit trails and data-residency policies are managed for you. May-2027 DPDP deadline becomes a non-event.</p>
+      </div>
+
+      <div style="padding:36px 32px;background:var(--ink);display:grid;grid-template-rows:auto 1fr auto;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;height:80px;">
+          <span style="color:var(--clay);"><svg width="22" height="22" viewBox="0 0 18 18" fill="none"><path d="M9 2L10 7L15 8L10 9L9 14L8 9L3 8L8 7L9 2Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:3px 7px;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);color:var(--clay);">Coming soon</span>
+            <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.4);letter-spacing:0.08em;">06</span>
+          </div>
+        </div>
+        <h3 style="color:var(--bg);font-size:22px;margin-bottom:12px;align-self:start;min-height:56px;line-height:1.2;">Population-scale analytics</h3>
+        <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;">Once histories are unified, you can ask cohort-level questions for the first time: outcomes, denial rates, drug efficacy.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY NOW ===== -->
+<section class="section" id="why-now" style="background:var(--bg-2);">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Why now</div>
+        <h2 style="margin-top:18px;text-wrap:balance;">
+          Four tailwinds, <span class="serif">arriving together</span>.
+        </h2>
+      </div>
+      <p class="muted" style="max-width:440px;font-size:16px;padding-bottom:8px;">
+        India's digital health stack has matured to the point where unified records are technically
+        possible, regulatorily required and financially incentivized, at the same moment.
+      </p>
+    </div>
+
+    <div class="whynow-grid" style="display:grid;grid-template-columns:repeat(4, 1fr);gap:24px;">
+      <div class="card" style="min-height:260px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div style="font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:var(--accent);letter-spacing:-0.02em;">ABDM</div>
+        <div>
+          <h3 style="font-size:18px;margin-bottom:8px;">Ayushman Bharat Digital Mission</h3>
+          <p style="font-size:14px;color:var(--ink-3);line-height:1.5;">A national health ID and interoperability framework, finally giving every record a destination it can travel to.</p>
+        </div>
+      </div>
+      <div class="card" style="min-height:260px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div style="font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:var(--accent);letter-spacing:-0.02em;">DHIS</div>
+        <div>
+          <h3 style="font-size:18px;margin-bottom:8px;">Digital Health Incentive Scheme</h3>
+          <p style="font-size:14px;color:var(--ink-3);line-height:1.5;">The government pays providers per ABHA-linked transaction. Onboarding Stanza directly subsidizes our customer acquisition cost.</p>
+        </div>
+      </div>
+      <div class="card" style="min-height:260px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div style="font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:var(--accent);letter-spacing:-0.02em;">+19%</div>
+        <div>
+          <h3 style="font-size:18px;margin-bottom:8px;">Compounding claim losses</h3>
+          <p style="font-size:14px;color:var(--ink-3);line-height:1.5;">$541M in disallowed payouts in FY24 alone, up 19% YoY. Insurers are tightening, not loosening, the criteria.</p>
+        </div>
+      </div>
+      <div class="card" style="min-height:260px;display:flex;flex-direction:column;justify-content:space-between;">
+        <div style="font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:var(--accent);letter-spacing:-0.02em;">2027</div>
+        <div>
+          <h3 style="font-size:18px;margin-bottom:8px;">DPDP enforcement deadline</h3>
+          <p style="font-size:14px;color:var(--ink-3);line-height:1.5;">Explicit patient consent for data processing becomes mandatory in May 2027. Legacy HIS were never built for this.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARE / WHY US ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Why us</div>
+        <h2 style="margin-top:18px;text-wrap:balance;">
+          Solving across silos, <span class="serif">not creating</span> more.
+        </h2>
+      </div>
+      <p class="muted" style="max-width:440px;font-size:16px;padding-bottom:8px;">
+        Other vendors digitize one part of the workflow. Stanza is the only platform that
+        spans capture, unification, claims and compliance, without forcing you off your EMR.
+      </p>
+    </div>
+
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:40%;">Capability</th>
+          <th class="center">Stanza</th>
+          <th class="center">Legacy EMRs</th>
+          <th class="center">ABDM-only HIS</th>
+          <th class="center">Document tools</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:500;">EHR-agnostic document digitization</td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:500;">ABDM compliance out of the box</td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:500;">One-click NHCX claims generation</td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:500;">Cross-institution patient histories</td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:500;">Population-scale analytics</td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+        </tr>
+        <tr>
+          <td style="font-weight:500;">Handwritten + multilingual extraction</td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="x"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></td>
+          <td class="center"><span class="check"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section section-ink" id="company">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> The team</div>
+        <h2 style="margin-top:18px;color:var(--bg);text-wrap:balance;">
+          A team who's <span class="serif">walked the wards</span>.
+        </h2>
+      </div>
+      <div></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0, 620px);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);width:fit-content;max-width:100%;">
+      <div style="padding:36px 32px;background:var(--ink);min-height:320px;display:flex;flex-direction:column;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:32px;">
+          <span class="tag" style="background:var(--clay);color:var(--ink);border:1px solid rgba(255,255,255,0.1);">FOUNDER</span>
+          <span class="mono" style="font-size:11px;color:rgba(246,244,238,0.5);">01</span>
+        </div>
+
+        <div style="display:grid;grid-template-columns:140px 1fr;gap:28px;align-items:start;">
+          <div style="width:140px;height:140px;border:1px solid rgba(255,255,255,0.12);border-radius:6px;overflow:hidden;background:rgba(255,255,255,0.04);">
+            <img src="assets/founder-shrey.png" alt="Shrey Baid" style="width:100%;height:100%;object-fit:cover;object-position:center;"/>
+          </div>
+
+          <div style="display:flex;flex-direction:column;min-height:140px;">
+            <h3 style="color:var(--bg);font-size:26px;font-weight:400;letter-spacing:-0.025em;line-height:1.1;margin-bottom:10px;">Shrey Baid</h3>
+            <p style="color:rgba(246,244,238,0.7);font-size:14.5px;line-height:1.5;margin-bottom:18px;">Partner, Baid TechVentures · Software Engineer, ex-Meta</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;">
+              <a class="founder-link" href="https://www.linkedin.com/in/shreybaid/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:rgba(246,244,238,0.75);text-decoration:none;padding:7px 11px;border:1px solid rgba(255,255,255,0.14);border-radius:4px;transition:background .15s, color .15s, border-color .15s;">
+                <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="5" cy="6" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="0.6"/><path d="M5 8.5v3M8 11.5V8.5M8 9.5c.5-1 2.5-1.3 2.5.5v1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                LinkedIn
+              </a>
+              <a class="founder-link" href="mailto:shreybaid@stanzahealth.com" style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:rgba(246,244,238,0.75);text-decoration:none;padding:7px 11px;border:1px solid rgba(255,255,255,0.14);border-radius:4px;transition:background .15s, color .15s, border-color .15s;">
+                <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><rect x="2" y="3.5" width="12" height="9" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M2.5 4.5L8 9L13.5 4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section" id="cta" style="background:var(--bg-2);border-top:1px solid var(--line);">
+  <div class="container">
+    <div class="cta-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Talk to us</div>
+        <h2 style="margin-top:18px;text-wrap:balance;">
+          Ready to retire the <span class="serif">paper trail</span>?
+        </h2>
+        <p style="color:var(--ink-2);font-size:17px;margin-top:18px;max-width:480px;">We're onboarding 3 design-partner hospitals through 2026. If you're a 200-physician+ facility ready to digitize, we'd like to talk.</p>
+      </div>
+      <div class="card" style="padding:0;">
+        <form id="cta-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate style="padding:32px;display:flex;flex-direction:column;gap:18px;">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
+          <input type="hidden" name="_subject" value="New Stanza demo request" />
+          <label style="display:flex;flex-direction:column;gap:6px;">
+            <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;display:flex;justify-content:space-between;align-items:baseline;">
+              <span>Hospital / organisation</span>
+            </span>
+            <input class="field-input" name="organisation" type="text" placeholder="e.g. Apollo · Bengaluru" />
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;">
+            <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;display:flex;justify-content:space-between;align-items:baseline;">
+              <span>Your name<span style="color:var(--bad);margin-left:4px;">*</span></span>
+              <span class="error-msg" data-field="name" style="color:var(--bad);text-transform:none;font-size:11px;display:none;"></span>
+            </span>
+            <input class="field-input" name="name" type="text" placeholder="Dr. ____" required />
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;">
+            <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;display:flex;justify-content:space-between;align-items:baseline;">
+              <span>Work email<span style="color:var(--bad);margin-left:4px;">*</span></span>
+              <span class="error-msg" data-field="email" style="color:var(--bad);text-transform:none;font-size:11px;display:none;"></span>
+            </span>
+            <input class="field-input" name="email" type="email" placeholder="you@hospital.org" required />
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;">
+            <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Phone / WhatsApp</span>
+            <input class="field-input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 ___" />
+          </label>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+            <label style="display:flex;flex-direction:column;gap:6px;">
+              <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Beds</span>
+              <input class="field-input" name="beds" type="text" placeholder="200+" />
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px;">
+              <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">EMR in use</span>
+              <input class="field-input" name="emr" type="text" placeholder="Practo / homegrown / none" />
+            </label>
+          </div>
+          <button id="cta-submit" class="btn btn-primary" style="margin-top:8px;align-self:flex-start;" type="submit">
+            <span data-label="default">Request a demo</span>
+            <span data-label="loading" style="display:none;">Sending…</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div id="cta-error" role="alert" style="display:none;color:var(--bad);font-size:13px;margin-top:-4px;"></div>
+        </form>
+        <div id="cta-thanks" style="display:none;padding:48px;text-align:center;">
+          <h3 style="font-size:22px;margin-bottom:8px;">Thank you.</h3>
+          <p style="color:var(--ink-3);font-size:14.5px;">We'll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:var(--ink);color:var(--bg);padding:80px 0 40px;">
+  <div class="container">
+    <div class="footer-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,0.1);">
+      <div>
+        <a href="#" class="nav-home" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit;">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="stanzaFooterLogoGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#22D3EE"/>
+                <stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="0.5" y="0.5" width="27" height="27" rx="7" fill="url(#stanzaFooterLogoGrad)"/>
+            <path d="M9 7v5a4 4 0 0 0 8 0V7" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <path d="M13 16v2.2a3.2 3.2 0 0 0 3.2 3.2h.6a3 3 0 0 0 3-3" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="20" cy="14.6" r="1.7" stroke="#FFFFFF" stroke-width="1.6" fill="none"/>
+          </svg>
+          <span style="font-size:18px;font-weight:500;letter-spacing:-0.02em;">Stanza Health</span>
+        </a>
+        <p style="color:rgba(246,244,238,0.6);font-size:14px;line-height:1.55;margin-top:18px;max-width:280px;">The intelligence layer for Indian healthcare data.</p>
+      </div>
+      <div>
+        <div class="mono" style="font-size:11px;color:rgba(246,244,238,0.5);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;">Platform</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#platform">Document Intelligence</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#platform">Patient Story</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#platform">Claims Automation</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#platform">Compliance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mono" style="font-size:11px;color:rgba(246,244,238,0.5);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;">Company</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#why-now">Why Now</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#why-us">Why Us</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#company">The Team</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="#cta">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mono" style="font-size:11px;color:rgba(246,244,238,0.5);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;">Contact</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="mailto:shreybaid@stanzahealth.com">shreybaid@stanzahealth.com</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="mailto:sanjalijha@stanzahealth.com">sanjalijha@stanzahealth.com</a></li>
+          <li><a style="color:rgba(246,244,238,0.85);font-size:14px;" href="mailto:info@stanzahealth.com">info@stanzahealth.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mono" style="display:flex;justify-content:space-between;align-items:center;margin-top:32px;font-size:12px;color:rgba(246,244,238,0.5);">
+      <div>© 2026 Stanza Health Technologies Pvt. Ltd.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Smooth scroll-to-top on logo
+  document.querySelectorAll('.nav-home').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Product tabs
+  var tabBtns = document.querySelectorAll('.product-tab-btn');
+  var panes = document.querySelectorAll('.product-pane');
+  tabBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var idx = btn.getAttribute('data-tab');
+      tabBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      panes.forEach(function (p) {
+        if (p.getAttribute('data-pane') === idx) {
+          p.style.display = 'grid';
+        } else {
+          p.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Form validation + AJAX submit (Formspree)
+  var form = document.getElementById('cta-form');
+  if (form) {
+    var submitBtn = document.getElementById('cta-submit');
+    var formError = document.getElementById('cta-error');
+    var btnDefault = submitBtn.querySelector('[data-label="default"]');
+    var btnLoading = submitBtn.querySelector('[data-label="loading"]');
+
+    function setLoading(isLoading) {
+      submitBtn.disabled = isLoading;
+      submitBtn.style.opacity = isLoading ? '0.6' : '';
+      submitBtn.style.cursor = isLoading ? 'not-allowed' : '';
+      btnDefault.style.display = isLoading ? 'none' : '';
+      btnLoading.style.display = isLoading ? 'inline' : 'none';
+    }
+
+    function showError(msg) {
+      formError.textContent = msg;
+      formError.style.display = 'block';
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = form.querySelector('input[name="name"]');
+      var email = form.querySelector('input[name="email"]');
+      var nameErr = form.querySelector('.error-msg[data-field="name"]');
+      var emailErr = form.querySelector('.error-msg[data-field="email"]');
+      var ok = true;
+
+      // reset
+      [name, email].forEach(function (i) { i.classList.remove('invalid'); });
+      [nameErr, emailErr].forEach(function (s) { s.style.display = 'none'; s.textContent = ''; });
+      formError.style.display = 'none';
+      formError.textContent = '';
+
+      if (!name.value.trim()) {
+        nameErr.textContent = 'Required';
+        nameErr.style.display = 'inline';
+        name.classList.add('invalid');
+        ok = false;
+      }
+      if (!email.value.trim()) {
+        emailErr.textContent = 'Required';
+        emailErr.style.display = 'inline';
+        email.classList.add('invalid');
+        ok = false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+        emailErr.textContent = 'Enter a valid email';
+        emailErr.style.display = 'inline';
+        email.classList.add('invalid');
+        ok = false;
+      }
+
+      if (!ok) return;
+
+      // Honeypot tripped — silently pretend success
+      var gotcha = form.querySelector('input[name="_gotcha"]');
+      if (gotcha && gotcha.value) {
+        form.style.display = 'none';
+        document.getElementById('cta-thanks').style.display = 'block';
+        return;
+      }
+
+      // Guard against unconfigured endpoint
+      if (/YOUR_FORM_ID/.test(form.action)) {
+        showError('Form is not yet configured. Please email shreybaid@stanzahealth.com directly.');
+        return;
+      }
+
+      // Dynamic subject — prefix with organisation if provided
+      var orgInput = form.querySelector('input[name="organisation"]');
+      var subjectInput = form.querySelector('input[name="_subject"]');
+      var orgVal = orgInput ? orgInput.value.trim() : '';
+      if (subjectInput) {
+        subjectInput.value = orgVal
+          ? 'New Stanza demo request — ' + orgVal
+          : 'New Stanza demo request';
+      }
+
+      setLoading(true);
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('cta-thanks').style.display = 'block';
+          return;
+        }
+        return response.json().then(function (data) {
+          var msg = (data && data.errors && data.errors.length)
+            ? data.errors.map(function (er) { return er.message; }).join(', ')
+            : 'Something went wrong. Please email shreybaid@stanzahealth.com.';
+          showError(msg);
+          setLoading(false);
+        }).catch(function () {
+          showError('Something went wrong. Please email shreybaid@stanzahealth.com.');
+          setLoading(false);
+        });
+      }).catch(function () {
+        showError('Network error. Please check your connection or email shreybaid@stanzahealth.com.');
+        setLoading(false);
+      });
+    });
+  }
+
+  // Reveal-on-scroll
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  }
+
+  // Founder link hover
+  document.querySelectorAll('.founder-link').forEach(function (el) {
+    el.addEventListener('mouseenter', function () {
+      el.style.background = 'rgba(255,255,255,0.06)';
+      el.style.color = 'var(--bg)';
+      el.style.borderColor = 'rgba(255,255,255,0.28)';
+    });
+    el.addEventListener('mouseleave', function () {
+      el.style.background = 'transparent';
+      el.style.color = 'rgba(246,244,238,0.75)';
+      el.style.borderColor = 'rgba(255,255,255,0.14)';
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
