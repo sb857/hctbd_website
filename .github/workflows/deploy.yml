@@ -29,9 +29,10 @@ jobs:
             echo "::error::FORMSPREE_FORM_ID repository secret is not set. Add it under Settings → Secrets and variables → Actions."
             exit 1
           fi
-          sed -i "s|__FORMSPREE_FORM_ID__|${FORMSPREE_FORM_ID}|g" index.html
-          if grep -q "__FORMSPREE_FORM_ID__" index.html; then
-            echo "::error::Placeholder still present in index.html after substitution"
+          # Targeted substitution: only inside the formspree.io URL, never elsewhere.
+          sed -i "s|formspree.io/f/__FORMSPREE_FORM_ID__|formspree.io/f/${FORMSPREE_FORM_ID}|g" index.html
+          if grep -q "formspree.io/f/__FORMSPREE_FORM_ID__" index.html; then
+            echo "::error::Placeholder still present in form action after substitution"
             exit 1
           fi
           echo "Substitution successful"

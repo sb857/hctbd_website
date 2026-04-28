@@ -1003,12 +1003,6 @@
         return;
       }
 
-      // Build-step guard: catches deploys that skipped the secret substitution
-      if (/__FORMSPREE_FORM_ID__/.test(form.action)) {
-        showError('Form is not yet configured. Please email shreybaid@stanzahealth.com directly.');
-        return;
-      }
-
       // Dynamic subject — prefix with organisation if provided
       var orgInput = form.querySelector('input[name="organisation"]');
       var subjectInput = form.querySelector('input[name="_subject"]');
