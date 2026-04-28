@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject Formspree form ID from secret
+        env:
+          FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }}
+        run: |
+          if [ -z "$FORMSPREE_FORM_ID" ]; then
+            echo "::error::FORMSPREE_FORM_ID repository secret is not set. Add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          sed -i "s|__FORMSPREE_FORM_ID__|${FORMSPREE_FORM_ID}|g" index.html
+          if grep -q "__FORMSPREE_FORM_ID__" index.html; then
+            echo "::error::Placeholder still present in index.html after substitution"
+            exit 1
+          fi
+          echo "Substitution successful"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

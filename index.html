@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Stanza Health · The intelligence layer for Indian healthcare</title>
 <meta name="description" content="Stanza turns handwritten notes, scans and legacy EMR records into standardized, interoperable patient histories, and files insurance claims for you, automatically." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -796,7 +798,7 @@
         <p style="color:var(--ink-2);font-size:17px;margin-top:18px;max-width:480px;">We're onboarding 3 design-partner hospitals through 2026. If you're a 200-physician+ facility ready to digitize, we'd like to talk.</p>
       </div>
       <div class="card" style="padding:0;">
-        <form id="cta-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate style="padding:32px;display:flex;flex-direction:column;gap:18px;">
+        <form id="cta-form" action="https://formspree.io/f/__FORMSPREE_FORM_ID__" method="POST" novalidate style="padding:32px;display:flex;flex-direction:column;gap:18px;">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
           <input type="hidden" name="_subject" value="New Stanza demo request" />
           <label style="display:flex;flex-direction:column;gap:6px;">
@@ -833,6 +835,10 @@
               <input class="field-input" name="emr" type="text" placeholder="Practo / homegrown / none" />
             </label>
           </div>
+          <label style="display:flex;flex-direction:column;gap:6px;">
+            <span class="mono" style="font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:0.08em;">Notes</span>
+            <textarea class="field-input" name="message" rows="3" placeholder="Timeline, scope, anything specific we should know" style="resize:vertical;font-family:inherit;line-height:1.5;min-height:60px;"></textarea>
+          </label>
           <button id="cta-submit" class="btn btn-primary" style="margin-top:8px;align-self:flex-start;" type="submit">
             <span data-label="default">Request a demo</span>
             <span data-label="loading" style="display:none;">Sending…</span>
@@ -997,8 +1003,8 @@
         return;
       }
 
-      // Guard against unconfigured endpoint
-      if (/YOUR_FORM_ID/.test(form.action)) {
+      // Build-step guard: catches deploys that skipped the secret substitution
+      if (/__FORMSPREE_FORM_ID__/.test(form.action)) {
         showError('Form is not yet configured. Please email shreybaid@stanzahealth.com directly.');
         return;
       }

@@ -1,0 +1,15 @@
+# Local secrets / config — never commit
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
