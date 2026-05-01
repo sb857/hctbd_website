@@ -30,8 +30,8 @@ jobs:
             exit 1
           fi
           # Targeted substitution: only inside the formspree.io URL, never elsewhere.
-          sed -i "s|formspree.io/f/__FORMSPREE_FORM_ID__|formspree.io/f/${FORMSPREE_FORM_ID}|g" index.html
-          if grep -q "formspree.io/f/__FORMSPREE_FORM_ID__" index.html; then
+          sed -i "s|formspree.io/f/__FORMSPREE_FORM_ID__|formspree.io/f/${FORMSPREE_FORM_ID}|g" index.html apply.html
+          if grep -q "formspree.io/f/__FORMSPREE_FORM_ID__" index.html apply.html; then
             echo "::error::Placeholder still present in form action after substitution"
             exit 1
           fi
