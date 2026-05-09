@@ -21,17 +21,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Inject Formspree form ID from secret
+      - name: Inject Formspree form IDs from secrets
         env:
           FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }}
+          FORMSPREE_APPLY_FORM_ID: ${{ secrets.FORMSPREE_APPLY_FORM_ID }}
         run: |
           if [ -z "$FORMSPREE_FORM_ID" ]; then
             echo "::error::FORMSPREE_FORM_ID repository secret is not set. Add it under Settings → Secrets and variables → Actions."
             exit 1
           fi
-          # Targeted substitution: only inside the formspree.io URL, never elsewhere.
-          sed -i "s|formspree.io/f/__FORMSPREE_FORM_ID__|formspree.io/f/${FORMSPREE_FORM_ID}|g" index.html apply.html
-          if grep -q "formspree.io/f/__FORMSPREE_FORM_ID__" index.html apply.html; then
+          if [ -z "$FORMSPREE_APPLY_FORM_ID" ]; then
+            echo "::error::FORMSPREE_APPLY_FORM_ID repository secret is not set. Add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          # Targeted substitution: each placeholder in its own file, formspree URL only.
+          sed -i "s|formspree.io/f/__FORMSPREE_FORM_ID__|formspree.io/f/${FORMSPREE_FORM_ID}|g" index.html
+          sed -i "s|formspree.io/f/__FORMSPREE_APPLY_FORM_ID__|formspree.io/f/${FORMSPREE_APPLY_FORM_ID}|g" apply.html
+          if grep -qE "formspree.io/f/__FORMSPREE_(APPLY_)?FORM_ID__" index.html apply.html; then
             echo "::error::Placeholder still present in form action after substitution"
             exit 1
           fi
