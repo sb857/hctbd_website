@@ -36,8 +36,8 @@ jobs:
           fi
           # Targeted substitution: each placeholder in its own file, formspree URL only.
           sed -i "s|formspree.io/f/__FORMSPREE_FORM_ID__|formspree.io/f/${FORMSPREE_FORM_ID}|g" index.html
-          sed -i "s|formspree.io/f/__FORMSPREE_APPLY_FORM_ID__|formspree.io/f/${FORMSPREE_APPLY_FORM_ID}|g" apply.html
-          if grep -qE "formspree.io/f/__FORMSPREE_(APPLY_)?FORM_ID__" index.html apply.html; then
+          sed -i "s|formspree.io/f/__FORMSPREE_APPLY_FORM_ID__|formspree.io/f/${FORMSPREE_APPLY_FORM_ID}|g" apply/index.html
+          if grep -qE "formspree.io/f/__FORMSPREE_(APPLY_)?FORM_ID__" index.html apply/index.html; then
             echo "::error::Placeholder still present in form action after substitution"
             exit 1
           fi
